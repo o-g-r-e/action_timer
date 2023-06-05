@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Reading time",
+  "version": "1.0",
+  "description": "Add the reading time to Chrome Extension documentation articles",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "http://springbookshop.site/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest"
+  ]
+}
