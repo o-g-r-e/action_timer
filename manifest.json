@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Reading time",
+  "name": "Action counter",
   "version": "1.0",
-  "description": "Add the reading time to Chrome Extension documentation articles",
+  "description": "This extension count actions",
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "default_popup/index.html"
   },
   "content_scripts": [
     {
@@ -24,6 +24,7 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "webRequest"
+    "webRequest",
+    "storage"
   ]
 }
