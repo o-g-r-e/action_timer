@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "This extension count actions",
   "action": {
-    "default_popup": "default_popup/index.html"
+    "default_popup": "default_popup/popup.html"
   },
   "content_scripts": [
     {
